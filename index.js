@@ -126,7 +126,7 @@ async function run() {
       }
     });
 
-    app.patch("recipes/:id", async (req, res) => {
+    app.patch("/recipes/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
       console.log(query);
